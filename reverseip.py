@@ -92,7 +92,8 @@ def reverseHackTarget(website):
 
 def Main():
     banners()
-    site = raw_input('[>] Enter site:# ')
+    print('Example : http://example.com')
+    site = raw_input('[>] Write Url:# ')
     reverseHackTarget(site)
     	
 
