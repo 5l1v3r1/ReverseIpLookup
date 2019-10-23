@@ -75,8 +75,6 @@ def write(var, data):
         f.write(data+'\n')
         f.close()
 
-        
-
 def reverseHackTarget(website):
     website = addHTTP(website)
     webs = removeHTTP(website)
@@ -89,12 +87,11 @@ def reverseHackTarget(website):
             if len(s) != 0:
                 write(var="+", data=s)
     else:
-        write(var="@", data="Sorry, The webserver of the website you entered have no domains other then the one you gave :')")
+        write(var="@", data="Website you Entered have no Domains :(")
 
 
 def Main():
     banners()
-    print 'Example :  http://example.com '
     site = raw_input('[>] Enter site:# ')
     reverseHackTarget(site)
     	
