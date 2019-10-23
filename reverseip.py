@@ -1,7 +1,12 @@
-import requests,json
-import os, sys, random, time,re
-from urllib2 import Request, urlopen, URLError, HTTPError
+# Coded By Mr.KaitoX
+# Working API -> HackerTarget - Reverse Ip Lookup
+# No Recoded Please Credits to the Author :> It's Cannot make you Good Programmer :V
 
+import os, sys, random, time,re
+try:
+    import requests
+except ImportError:
+    os.system('pip2 install requests')
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -46,7 +51,6 @@ def validWebsite(website):
             exit(wrong_URL)
     else:
         exit(empty_Website)
-
 def removeHTTP(website):
     website = cleanURL(website); return(website)
 
