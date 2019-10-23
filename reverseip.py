@@ -1,6 +1,5 @@
 import requests,json
 import os, sys, random, time,re
-import socket
 from urllib2 import Request, urlopen, URLError, HTTPError
 
 
